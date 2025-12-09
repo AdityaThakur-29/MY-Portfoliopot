@@ -1,5 +1,5 @@
 export default function Skills() {
-  const skills = ['HTML5', 'CSS3', 'JavaScript', 'React', 'Next.js', 'Git', 'Responsive Design', 'UI/UX']
+  const skills = ['HTML5', 'CSS3', 'JavaScript', 'React', 'Next.js', 'Git', 'Responsive Design', 'UI/UX', ]
 
   return (
     <section id="skills" className="section section-gray">

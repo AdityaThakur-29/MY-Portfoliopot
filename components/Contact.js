@@ -13,7 +13,7 @@ export default function Contact() {
     setFormData({ name: '', email: '', message: '' })
   }
 
-  // Add your social media links here
+  
   const socialLinks = [
     {
       name: 'GitHub',
