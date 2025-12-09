@@ -4,21 +4,21 @@ const projects = [
         title: 'Netflix Clone',
         description: 'A fully responsive Netflix clone with movie browsing, search functionality, and dynamic content display.',
         image: '/nethlix.jpg',
-        liveUrl: 'https://netflix-clone-aditya.vercel.app',
+        liveUrl: 'https://myflix-two-sand.vercel.app/',
         codeUrl: 'https://github.com/AdityaThakur-29/Netflix-Clone'
       },
       {
         title: 'Tic Tac Toe',
         description: 'Interactive tic-tac-toe game with player vs player mode, win detection, and score tracking.',
         image: '/tectacto.png',
-        liveUrl: 'https://tictactoe-aditya.vercel.app',
+        liveUrl: 'https://tic-tac-toe-delta-self-96.vercel.app/',
         codeUrl: 'https://github.com/AdityaThakur-29/tic-tac-toe'
       },
       {
         title: 'Sign Up Form',
         description: 'Modern registration form with form validation, password strength checker, and responsive design.',
         image: '/sing-up.jpg',
-        liveUrl: 'https://signup-form-aditya.vercel.app',
+        liveUrl: 'https://sign-up-form-gray-nine.vercel.app/',
         codeUrl: 'https://github.com/AdityaThakur-29/sign-up-form'
       },
     ]
