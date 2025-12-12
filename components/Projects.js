@@ -15,6 +15,13 @@ const projects = [
         codeUrl: 'https://github.com/AdityaThakur-29/tic-tac-toe'
       },
       {
+        title: 'QR-CODE GENERATER',
+        description: 'A simple, modern, and customizable QR Code Generator Web App built using HTML, CSS, and JavaScript.',
+        image: '/qrbg.png',
+        liveUrl: 'https://qr-code-generater-delta.vercel.app/',
+        codeUrl: 'https://github.com/AdityaThakur-29/QR-CODE--GENERATER'
+      },
+      {
         title: 'Sign Up Form',
         description: 'Modern registration form with form validation, password strength checker, and responsive design.',
         image: '/sing-up.jpg',
