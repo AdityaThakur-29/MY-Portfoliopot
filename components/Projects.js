@@ -28,6 +28,13 @@ const projects = [
         liveUrl: 'https://sign-up-form-gray-nine.vercel.app/',
         codeUrl: 'https://github.com/AdityaThakur-29/sign-up-form'
       },
+      {
+        title: 'Rainbow-cat game',
+        description: 'A fun and interactive rainbow cat game built with HTML, CSS, and JavaScript.',
+        image: '/rainbow-cat.jpg',
+        liveUrl: 'https://rainbow-cat-1.vercel.app/',
+        codeUrl: 'https://github.com/AdityaThakur-29/rainbow-_cat_1'
+      },
     ]
 
 return (
