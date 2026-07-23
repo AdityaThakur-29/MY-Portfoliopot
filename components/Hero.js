@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="hero-overlay">
         <h1 className="hero-title">Aditya Thakur</h1>
         <p className="hero-subtitle">Frontend Developer & Web Designer</p>
-        <a href="/Aditya_Thakur_Resume.pdf" download="Aditya_Thakur_Resume.pdf">
+        <a href="Aditya thakur r.pdf" download="Aditya thakur r.pdf">
           <button className="hero-button">Download Resume</button>
         </a>
       </div>
