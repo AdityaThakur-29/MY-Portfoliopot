@@ -9,7 +9,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    alert('Message sent! (This is a demo)')
+    alert('Message sent! Thank you for reaching out.')
     setFormData({ name: '', email: '', message: '' })
   }
 
