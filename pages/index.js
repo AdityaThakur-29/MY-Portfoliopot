@@ -1,3 +1,4 @@
+import { ReactLenis } from 'lenis/react'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import About from '../components/About'
@@ -8,14 +9,16 @@ import Footer from '../components/Footer'
 
 export default function Home() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+    <ReactLenis root>
+      <div>
+        <Navbar />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
+    </ReactLenis>
   )
 }

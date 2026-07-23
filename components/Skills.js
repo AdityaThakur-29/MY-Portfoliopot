@@ -3,7 +3,7 @@ export default function Skills() {
     {
       category: 'Programming',
       icon: '💻',
-      skills: ['HTML', 'CSS', 'JavaScript (ES6)', 'Python', 'Node.js']
+      skills: ['HTML', 'CSS', 'JavaScript ', 'Python', 'Node.js']
     },
     {
       category: 'Frameworks',
@@ -56,4 +56,4 @@ export default function Skills() {
       </div>
     </section>
   )
-}
+}
