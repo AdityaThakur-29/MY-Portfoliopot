@@ -69,17 +69,17 @@ export default function Contact() {
     {
       name: 'GitHub',
       url: 'https://github.com/AdityaThakur-29',  
-      icon: '🐙'
+      iconPath: '/github copy.svg'
     },
     {
       name: 'LinkedIn',
       url: 'https://www.linkedin.com/in/aditya-thakur-901ab6392/',  
-      icon: '💼'
+      iconPath: '/linkedin copy.svg'
     },
     {
       name: 'Instagram',
       url: 'https://www.instagram.com/aditya___thakur_86/',  
-      icon: '📸'
+      iconPath: '/instagram copy.svg'
     }
   ]
 
@@ -120,7 +120,17 @@ export default function Contact() {
           </div>
 
           <div className="social-section">
-            <p className="social-text">Connect with me:</p>
+            <p className="social-text">
+              {"Connect with me:".split("").map((char, index) => (
+                <span 
+                  key={index} 
+                  className={char === " " ? "" : "animate-wave-char"} 
+                  style={{ animationDelay: `${index * 0.08}s` }}
+                >
+                  {char === " " ? "\u00A0" : char}
+                </span>
+              ))}
+            </p>
             <div className="social-links">
               {socialLinks.map((social) => (
                 <a 
@@ -130,7 +140,12 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="social-link"
                 >
-                  <span className="social-icon">{social.icon}</span> {social.name}
+                  <img 
+                    src={social.iconPath} 
+                    alt={`${social.name} icon`}
+                    style={{ width: '20px', height: '20px', display: 'inline-block', filter: 'brightness(0) invert(1)' }}
+                  />
+                  {social.name}
                 </a>
               ))}
             </div>

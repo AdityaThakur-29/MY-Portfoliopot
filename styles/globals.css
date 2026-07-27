@@ -518,8 +518,9 @@ html {
 }
 
 .social-text {
-  color: #474747;
-  font-weight: 500;
+  color: #444040;
+  font-weight: 700;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -1134,4 +1135,20 @@ html {
 }
 .custom-toast.info .toast-progress {
   background-color: #3B82F6;
+}
+
+/* Staggered text wave animation */
+.animate-wave-char {
+  display: inline-block;
+  animation: wave-bounce 1.2s ease-in-out infinite;
+}
+
+@keyframes wave-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+    color: #0051ff;
+  }
 }
