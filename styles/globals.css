@@ -546,7 +546,8 @@ html {
 .projects-section-stack {
   background-color: #ffffff;
   color: #f8fafc;
- padding: 6rem 2rem;
+  padding: 6rem 2rem;
+  overflow: visible;
 }
 
 .projects-section-stack .section-title {
@@ -559,6 +560,8 @@ html {
   flex-direction: column;
   gap: 6rem;
   padding-bottom: 6rem;
+  position: relative;
+  overflow: visible;
 }
 
 
@@ -1392,5 +1395,138 @@ html {
   50% {
     transform: translateY(-10px);
     color: #0051ff;
+  }
+}
+
+/* TargetCursor Styles */
+.target-cursor-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+}
+
+.target-cursor-dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  background: #0051ff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+}
+
+.target-cursor-corner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #0051ff;
+  will-change: transform;
+}
+
+.corner-tl {
+  transform: translate(-150%, -150%);
+  border-right: none;
+  border-bottom: none;
+}
+
+.corner-tr {
+  transform: translate(50%, -150%);
+  border-left: none;
+  border-bottom: none;
+}
+
+.corner-br {
+  transform: translate(50%, 50%);
+  border-left: none;
+  border-top: none;
+}
+
+.corner-bl {
+  transform: translate(-150%, 50%);
+  border-right: none;
+  border-top: none;
+}
+
+/* Comprehensive Mobile Responsiveness & Horizontal Scroll Elimination without breaking position:sticky */
+html, body, #__next {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .section-container {
+    padding: 0 0.5rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .projects-section-stack {
+    padding: 3rem 0.75rem;
+  }
+
+  .project-stack-card {
+    padding: 1.5rem 1.25rem;
+    border-radius: 18px;
+  }
+
+  .project-stack-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-stack-image-wrapper {
+    height: 220px;
+    width: 100%;
+  }
+
+  .project-stack-title {
+    font-size: 1.75rem;
+  }
+
+  .project-stack-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .toast-stack {
+    right: 12px;
+    left: 12px;
+    width: calc(100% - 24px);
+    max-width: calc(100% - 24px);
+  }
+
+  .about-photo-orbit-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-profile-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-dots-matrix {
+    left: 0;
+    top: 0;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
