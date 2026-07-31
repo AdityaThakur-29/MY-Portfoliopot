@@ -467,26 +467,94 @@ html {
 }
 
 /* Skills Section */
-.skill-categories-grid {
+.skills-section-stack {
+  background-color: #f8fafc;
+  overflow: visible;
+  position: relative;
+}
+
+.skills-section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: stretch;
+}
+
+.skills-left-col {
+  width: 100%;
+  height: 100%;
+}
+
+.skills-left-sticky {
+  position: sticky;
+  top: 15vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skills-pre-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #2563eb;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.skills-main-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.skills-title-underline {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #38bdf8);
+  border-radius: 4px;
+}
+
+.skills-description {
+  font-size: 1.15rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.skills-cloud-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+}
+
+.skills-right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
 }
 
 .skill-category-card {
   background-color: white;
-  padding: 1.75rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  padding: 2.25rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
   border: 1px solid rgba(229, 231, 235, 0.8);
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
 }
 
 .skill-category-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(37, 99, 235, 0.12);
   border-color: rgba(37, 99, 235, 0.3);
 }
@@ -540,6 +608,26 @@ html {
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
 }
+
+@media (max-width: 768px) {
+  .skills-section-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 4rem 1.5rem;
+  }
+
+  .skills-left-sticky {
+    position: relative;
+    top: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skills-title-underline {
+    margin: 0 auto;
+  }
+}
+
 
 
 /* Projects Stacking Layout */
